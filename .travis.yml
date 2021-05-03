@@ -23,6 +23,7 @@ before_script:
   - sed 's/zm-zcs/zm-zcs-master/g' build.xml >tmp
   - mv tmp build.xml
   - pwd
+  - ls -ltr
 #  - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
     
 install:
