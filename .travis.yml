@@ -17,9 +17,6 @@ arch:
 
 dist: bionic
 
-addons:
-  apt:
-    packages: zm-zcs  
     
 install:
    - wget "https://github.com/Zimbra/zm-zcs.git"
