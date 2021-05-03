@@ -19,10 +19,10 @@ dist: bionic
 
 addons:
   apt:
-    packages: https://github.com/Zimbra/zm-zcs  
+    packages: zm-zcs  
     
 install:
-
+   - wget "https://github.com/Zimbra/zm-zcs.git"
    - sudo apt update
    - sudo apt install ant
 
