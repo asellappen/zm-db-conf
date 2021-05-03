@@ -24,7 +24,4 @@ install:
 
 script:
 
-   - ant main
-   - mvn ant:ant
-   - mvn antrun:run
-   - ant build.xml
+   - ant
