@@ -9,10 +9,22 @@
 # Script License      : Apache License, Version 2 or later
 #
 # ----------------------------------------------------------------------------
-language: perl
+language: java
 
 arch:
     - amd64
     - ppc64le
 
 dist: bionic
+
+install:
+
+   - sudo apt update
+   - sudo apt install ant
+
+script:
+
+   - ant main
+   - mvn ant:ant
+   - mvn antrun:run
+   - ant build.xml
