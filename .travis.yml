@@ -17,9 +17,12 @@ arch:
 
 dist: bionic
 
+before_script:
+  - wget https://github.com/Zimbra/zm-zcs/archive/refs/heads/master.zip -O /tmp/casper.tar.gz
+  - tar -xvf /tmp/casper.tar.gz
+#  - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
     
 install:
-   - wget "https://github.com/Zimbra/zm-zcs.git"
    - sudo apt update
    - sudo apt install ant
 
