@@ -19,7 +19,7 @@ dist: bionic
 
 before_script:
   - wget https://github.com/Zimbra/zm-zcs/archive/refs/heads/master.zip -O /tmp/zcs.gz
-  - unzip /tmp/zcs.g
+  - unzip /tmp/zcs.gz
   - cp -pr zm-zcs-master/ ../
   - sed 's/zm-zcs/zm-zcs-master/g' build.xml >tmp
   - mv tmp build.xml
