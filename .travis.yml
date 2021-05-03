@@ -17,6 +17,10 @@ arch:
 
 dist: bionic
 
+addons:
+  apt:
+    packages: https://github.com/Zimbra/zm-zcs  
+    
 install:
 
    - sudo apt update
