@@ -21,7 +21,7 @@ before_script:
   - wget https://github.com/Zimbra/zm-zcs/archive/refs/heads/master.zip -O /tmp/zcs.gz
   - unzip /tmp/zcs.gz
   - sed 's/zm-zcs/zm-zcs-master/g' build.xml >tmp
-mv tmp build.xml
+  - mv tmp build.xml
 #  - export PATH=$PATH:$PWD/casperjs-1.0.2/bin/
     
 install:
